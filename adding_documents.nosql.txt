@@ -1,0 +1,27 @@
+
+pour ouvrir le mongosh shell: mongosh
+pour le quitter: exit
+
+to use any databse even without creating a new one ( its allowed ) : use <db_name>
+
+to show the collections of a database we use: show collections ( genre select *)
+
+creation d'une variable: var <nom_var> = <valeur_var>
+
+pour afficher la valeur de la variable: <nom_var>
+
+
+** pour chercher dans une base de donnees: db.<elem_name> (comme dans json par exemple)
+
+
+
+**Ajouter un seul document: 
+pour ajouter une collection dans la bdd: db.<elem_name>.insertOne({<les fields que l'on veut ajouter>})
+exemple:  db.books.insertOne({title:"Le printemps n'est plus", author:"Hanafi Yasmine", pages: 300, rating: 10, genres: ["romance", "poetry"]})
+
+** ajouter plusieurs documents
+
+db.books.insertMany([{title:"Harry Potter et les reliques de la mort", author:"JK Rowling", pages: 700, rating: 100, genres: ["fantasy", "magic"]},
+{title:"Silent Patient", author:"Forgot the name", pages: 200, rating: 10, genres: ["Thriller", "suspence"]}])
+
+
